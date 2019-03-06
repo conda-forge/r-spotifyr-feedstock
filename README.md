@@ -11,7 +11,7 @@ Package license: MIT
 
 Feedstock license: BSD 3-Clause
 
-Summary: A wrapper for pulling track audio features from the 'Spotify' Web API <http://developer.spotify.com/web-api> in bulk.  By automatically batching API requests, it allows you to enter an artist's  name and retrieve their entire discography in seconds, along with audio  features and track/album popularity metrics. You can also pull song and  playlist information for a given 'Spotify' user (including yourself!).
+Summary: An R wrapper for pulling data from the 'Spotify' Web API  <http://developer.spotify.com/web-api> in bulk. It allows you to enter  an artist's name and retrieve their entire discography in seconds, along  with audio features and lyrics from Genius Lyrics <https://www.genius.com>.  You can also pull song and playlist information for a given 'Spotify' user.
 
 
 
