@@ -1,4 +1,4 @@
-{% set version = '2.0.0' %}
+{% set version = "2.1.0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/spotifyr_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/spotifyr/spotifyr_{{ version }}.tar.gz
-  sha256: 556dc6d4065fe9cb452acefc6a4f0d5d115ce30facaf83fa0f97c07a6bbfe5f8
+  sha256: 18e996a1fa1f0bb73549a7ffda1213f645f150942dc5f30b206ec5d30f782afe
 
 build:
   merge_build_host: True  # [win]
@@ -26,6 +26,7 @@ requirements:
   host:
     - r-base
     - r-dplyr
+    - r-genius
     - r-httr
     - r-jsonlite
     - r-lubridate
@@ -38,6 +39,7 @@ requirements:
   run:
     - r-base
     - r-dplyr
+    - r-genius
     - r-httr
     - r-jsonlite
     - r-lubridate
@@ -69,11 +71,11 @@ extra:
 
 # Package: spotifyr
 # Title: R Wrapper for the 'Spotify' Web API
-# Version: 2.0.0
+# Version: 2.1.0
 # Authors@R: c(person("Charlie", "Thompson", email = "chuck@rcharlie.com", role = c("aut", "cre")), person("Josiah", "Parry", email = "josiah.parry@yahoo.com", role = "aut"), person("Donal", "Phipps", email = "donal.phipps@gmail.com", role = "aut"), person("Tom", "Wolff", email = "tom.wolff@duke.edu", role = "aut"))
 # Description: An R wrapper for pulling data from the 'Spotify' Web API  <http://developer.spotify.com/web-api> in bulk. It allows you to enter  an artist's name and retrieve their entire discography in seconds, along  with audio features and lyrics from Genius Lyrics <https://www.genius.com>.  You can also pull song and playlist information for a given 'Spotify' user.
 # Depends: R (>= 3.3.0)
-# Imports: dplyr, purrr, tidyr, httr, lubridate, jsonlite, readr, rvest, stringr, tibble
+# Imports: dplyr, purrr, tidyr, httr, lubridate, jsonlite, readr, rvest, stringr, tibble, genius
 # License: MIT + file LICENSE
 # Encoding: UTF-8
 # LazyData: true
@@ -82,8 +84,8 @@ extra:
 # URL: http://github.com/charlie86/spotifyr
 # BugReports: http://github.com/charlie86/spotifyr/issues
 # NeedsCompilation: no
-# Packaged: 2019-03-04 19:57:45 UTC; charliet
+# Packaged: 2019-03-12 03:42:07 UTC; charliet
 # Author: Charlie Thompson [aut, cre], Josiah Parry [aut], Donal Phipps [aut], Tom Wolff [aut]
 # Maintainer: Charlie Thompson <chuck@rcharlie.com>
 # Repository: CRAN
-# Date/Publication: 2019-03-06 11:00:03 UTC
+# Date/Publication: 2019-03-12 09:40:02 UTC
