@@ -1,4 +1,4 @@
-{% set version = "2.1.0" %}
+{% set version = "2.1.1" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/spotifyr_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/spotifyr/spotifyr_{{ version }}.tar.gz
-  sha256: 18e996a1fa1f0bb73549a7ffda1213f645f150942dc5f30b206ec5d30f782afe
+  sha256: e8b3f9c3ff1f9da76259e1a2149b7a7d9874687a63933feedb2562ef5f397634
 
 build:
   merge_build_host: True  # [win]
