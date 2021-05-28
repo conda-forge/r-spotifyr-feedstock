@@ -5,11 +5,9 @@ Home: http://github.com/charlie86/spotifyr
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-spotifyr-feedstock/blob/master/LICENSE.txt)
 
 Summary: An R wrapper for pulling data from the 'Spotify' Web API  <http://developer.spotify.com/web-api> in bulk. It allows you to enter  an artist's name and retrieve their entire discography in seconds, along  with audio features and lyrics from Genius Lyrics <https://www.genius.com>.  You can also pull song and playlist information for a given 'Spotify' user.
-
-
 
 Current build status
 ====================
@@ -38,6 +36,7 @@ Installing `r-spotifyr` from the `conda-forge` channel can be achieved by adding
 
 ```
 conda config --add channels conda-forge
+conda config --set channel_priority strict
 ```
 
 Once the `conda-forge` channel has been enabled, `r-spotifyr` can be installed with:
@@ -108,9 +107,9 @@ build distinct package versions.
 
 In order to produce a uniquely identifiable distribution:
  * If the version of a package **is not** being increased, please add or increase
-   the [``build/number``](https://conda.io/docs/user-guide/tasks/build-packages/define-metadata.html#build-number-and-string).
+   the [``build/number``](https://docs.conda.io/projects/conda-build/en/latest/resources/define-metadata.html#build-number-and-string).
  * If the version of a package **is** being increased, please remember to return
-   the [``build/number``](https://conda.io/docs/user-guide/tasks/build-packages/define-metadata.html#build-number-and-string)
+   the [``build/number``](https://docs.conda.io/projects/conda-build/en/latest/resources/define-metadata.html#build-number-and-string)
    back to 0.
 
 Feedstock Maintainers
