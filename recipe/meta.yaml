@@ -23,32 +23,45 @@ build:
 requirements:
   build:
     - {{ posix }}zip               # [win]
+    - cross-r-base {{ r_base }}    # [build_platform != target_platform]
   host:
     - r-base
+    - r-assertthat
     - r-dplyr
     - r-genius
+    - r-ggridges
     - r-httr
+    - r-janitor
     - r-jsonlite
     - r-lubridate
+    - r-magrittr
     - r-purrr
     - r-readr
+    - r-rlang
     - r-rvest
     - r-stringr
     - r-tibble
     - r-tidyr
+    - r-xml2
   run:
     - r-base
+    - r-assertthat
     - r-dplyr
     - r-genius
+    - r-ggridges
     - r-httr
+    - r-janitor
     - r-jsonlite
     - r-lubridate
+    - r-magrittr
     - r-purrr
     - r-readr
+    - r-rlang
     - r-rvest
     - r-stringr
     - r-tibble
     - r-tidyr
+    - r-xml2
 
 test:
   commands:
