@@ -1,11 +1,11 @@
-About r-spotifyr
-================
+About r-spotifyr-feedstock
+==========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-spotifyr-feedstock/blob/main/LICENSE.txt)
 
 Home: http://github.com/charlie86/spotifyr
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-spotifyr-feedstock/blob/main/LICENSE.txt)
 
 Summary: An R wrapper for pulling data from the 'Spotify' Web API  <http://developer.spotify.com/web-api> in bulk. It allows you to enter  an artist's name and retrieve their entire discography in seconds, along  with audio features and lyrics from Genius Lyrics <https://www.genius.com>.  You can also pull song and playlist information for a given 'Spotify' user.
 
